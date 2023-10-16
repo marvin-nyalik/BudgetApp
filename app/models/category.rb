@@ -3,5 +3,5 @@ class Category < ApplicationRecord
   validates :icon, presence: true
 
   belongs_to :user
-  has_many :purchases
+  has_many :purchases, through: :category_purchases
 end
