@@ -59,12 +59,12 @@
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://recipeapp-85xl.onrender.com/) -->
+- [Live Demo Link](https://recipeapp-85xl.onrender.com/). A link to the video demo of this project can be found <a href="https://www.loom.com/share/867adafb3f98407bbb647a4381fd00f6">here</a>.
 
-<!-- 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
