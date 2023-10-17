@@ -188,8 +188,8 @@ If you like this project you can share this project to your friend
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank microverse for defining these project requirements
+- [ ] Major appreciations to Gregoire Vella for the Creative Commons design of this project.
+- [ ] I'd also like to thank Microverse for defining the project requirements
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
