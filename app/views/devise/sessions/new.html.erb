@@ -1,17 +1,21 @@
-<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+<div class="cont">
+<div class="d-flex justify-content-between bg-primary text-light align-items-center my-0 rem-margin">
+  <%= link_to root_path do %>
+   <i class="bx bxs-chevron-left text-white fw-light"></i>
+  <% end %>
+  <h4 class="card-title">Login</h4>
+  <h5>Next</h5>
+</div>
+<div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
   <div style="width: 80%;">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
-      <h2>Sign in</h2>
-
       <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control",  placeholder: "Email" %>
       </div>
 
       <div class="form-group">
-        <%= f.label :password %>
-        <%= f.password_field :password, autocomplete: "current-password", class: "form-control" %>
+        <%= f.password_field :password, autocomplete: "current-password", class: "form-control",  placeholder: "Password" %>
       </div>
 
       <div class="form-group">
@@ -23,4 +27,5 @@
       </div>
     <% end %>
   </div>
+</div>
 </div>

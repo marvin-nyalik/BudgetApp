@@ -1,6 +1,7 @@
-<div class="container">
-<div class="d-flex justify-content-between">
-  <h3>All Categories</h3>
+<div class="bottomise-container">
+<div class="d-flex justify-content-between bg-primary text-light align-items-center within">
+  <i class='bx bx-menu'></i>
+  <h3>Categories</h3>
   <%= link_to 'Sign out', let_user_logout_path, method: :delete %>
 </div>
 
@@ -28,7 +29,7 @@
       <% end %>
     <% end %>
   </div>
-  <div class="text-center mt-3">
-    <%= link_to 'Add A New Category', new_category_path, class: "btn btn-primary" %>
+  <div class="text-center mt-3 bottomise">
+    <%= link_to 'Add A New Category', new_category_path, class: "btn btn-success btn-outline-primary" %>
   </div>
 </div>

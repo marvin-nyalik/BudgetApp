@@ -1,34 +1,35 @@
-<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+<div class="cont">
+<div class="d-flex justify-content-between bg-primary text-light align-items-center my-0 rem-margin">
+  <%= link_to root_path do %>
+   <i class="bx bxs-chevron-left text-white fw-light"></i>
+  <% end %>
+  <h4 class="card-title">Register</h4>
+  <h5>Next</h5>
+</div>
+
+<div class="container d-flex justify-content-center align-items-center rem-mar" style="height: 85vh;">
   <div style="width: 80%;">
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
-      <h2>Sign up</h2>
-
       <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control",  placeholder: "Email"  %>
       </div>
 
       <div class="form-group">
-        <%= f.label :full_name %>
-        <%= f.text_field :name, autocomplete: "name", class: "form-control" %>
+        <%= f.text_field :name, autocomplete: "name", class: "form-control",  placeholder: "Full Name" %>
       </div>
 
       <div class="form-group">
-        <%= f.label :password %>
-        <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %>
-        <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
+        
+        <%= f.password_field :password, autocomplete: "new-password", class: "form-control",  placeholder: "Password, 6 characters minimum"  %>
       </div>
 
       <div class="form-group">
-        <%= f.label :password_confirmation %>
-        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control",  placeholder: "Confirm Password"  %>
       </div>
 
       <div class="form-group">
-        <%= f.submit "Sign up", class: "btn btn-primary" %>
+        <%= f.submit "Sign up", class: "btn btn-success" %>
       </div>
 
       <div class="form-group">
@@ -36,4 +37,5 @@
       </div>
     <% end %>
   </div>
+</div>
 </div>
