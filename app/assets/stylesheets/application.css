@@ -13,9 +13,10 @@
  *= require_tree .
  *= require_self
  */
- @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
 }
@@ -54,10 +55,11 @@ body, html {
 
 .bx {
   font-size: 25px;
-  font-weight: 400;  
+  font-weight: 400;
 }
 
-.notice, .alert {
+.notice,
+.alert {
   width: 90%;
   margin: 0 auto;
   text-align: center;
