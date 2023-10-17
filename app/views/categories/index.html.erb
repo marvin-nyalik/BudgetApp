@@ -8,24 +8,23 @@
     <% @user.categories.each_with_index do |cat, index|%>
       <%= link_to category_path(cat) do %>
         <div class="category card mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="<%= cat.icon %>" class="img-fluid" alt="<%= cat.name %>" style="height: 100px; width:100px;">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body text-dark">
-            <div class="d-flex justify-content-between">
-              <h5 class="card-title"><%= cat.name %></h5>
-              <p class="card-text">Amount: $<%= @totals[index] %></p>
-            </div>
-            <div>
-              <p class="card-text text-left"><%= cat.created_at.strftime("%d %B %Y") %></p>
-            </div>
+        <div class="row g-0" style="display: flex">
+          <div class="col-md-4" style="flex: 1">
+            <img src="<%= cat.icon %>" class="img-fluid" alt="<%= cat.name %>" style="height: 80px; width: 80px; margin: auto;">
           </div>
-          
+          <div class="col-md-8" style="flex: 4">
+            <div class="card-body text-dark">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title"><%= cat.name %></h5>
+                <p class="card-text">Amount: $<%= @totals[index] %></p>
+              </div>
+              <div>
+                <p class="card-text text-left"><%= cat.created_at.strftime("%d %B %Y") %></p>
+              </div>
             </div>
           </div>
         </div>
+      </div>      
       <% end %>
     <% end %>
   </div>

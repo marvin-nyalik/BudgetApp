@@ -59,12 +59,11 @@
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://recipeapp-85xl.onrender.com/) -->
+ [Live Demo Link](https://marvin-hiud.onrender.com/). Watch a live video demo of this project <a href="https://www.loom.com/share/c523216e31a14ee1ad575bf2d859dbe1?sid=fc8b2b95-cefe-438b-91b5-23646faf8774">here</a>
 
-<!-- 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
