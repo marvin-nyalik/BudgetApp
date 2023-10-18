@@ -8,7 +8,6 @@ class CategoriesController < ApplicationController
 
   def index
     if current_user
-      # Retrieve the user along with their associated categories and purchases.
       @user = User.includes(categories: :purchases).find(current_user.id)
       @totals = []
       @user.categories.each do |cat|

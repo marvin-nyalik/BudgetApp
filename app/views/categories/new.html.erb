@@ -1,9 +1,10 @@
-<div class="container mt-5">
-  <div class="d-flex justify-content-between bg-primary text-light align-items-center">
+<div class="cat-cont mt-5">
+  <div class="d-flex justify-content-between bg-primary text-light align-items-center withinc">
     <%= link_to categories_path do %>
       <i class="bx bxs-chevron-left display-4 text-white"></i>
     <% end %>
-    <h5 class="card-title">Add New Category</h5>
+    <p class="card-title">Add New Category</p>
+    <%= link_to 'Sign out', let_user_logout_path, method: :delete , style:"color: white; font-weight: 400;"%>
   </div>
 
   <%= form_with model: @category, url: categories_path, html: { class: 'card' } do |f| %>
