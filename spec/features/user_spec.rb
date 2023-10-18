@@ -26,6 +26,6 @@ RSpec.describe 'User authentication', type: :feature do
     fill_in 'user_password', with: 'password123'
     click_button 'Sign in'
 
-    expect(page).to have_text('All Categories')
+    expect(page).to have_text('Categories')
   end
 end

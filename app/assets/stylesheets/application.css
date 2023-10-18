@@ -68,6 +68,17 @@ html {
   background-color: #007bff;
 }
 
+.withses {
+  position: relative;
+  top: 10px;
+}
+
+.withses p,
+a {
+  position: relative;
+  top: 20px;
+}
+
 .bottomise-container {
   position: relative;
   height: auto;
@@ -84,6 +95,12 @@ html {
   width: 100vw;
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+.bottomisep {
+  position: relative;
+  top: 80vh;
+  width: 80vw;
 }
 
 .bottomise a {
@@ -110,14 +127,16 @@ html {
   width: 100vw !important;
 }
 
-.withinc p {
+.withinc p,
+a {
   font-size: 18px;
   position: relative;
   top: 6px;
   font-weight: 400;
 }
 
-.withinp p {
+.withinp p,
+a {
   font-size: 18px;
   position: relative;
   top: 10px;
@@ -137,9 +156,18 @@ html {
   margin-bottom: 10px;
 }
 
+.within p {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .within a {
   color: white;
   text-decoration: none;
+  position: relative;
+  top: -5px;
   font-size: 20px;
   font-weight: 500;
 }
