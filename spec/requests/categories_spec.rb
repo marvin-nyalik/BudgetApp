@@ -1,11 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe CategoriesController, type: :controller do
-  let(:user) { create(:user) } 
-  let(:category) { create(:category, user: user) } 
+  let(:user) { create(:user) }
+  let(:category) { create(:category, user:) }
 
   before do
-    sign_in user 
+    sign_in user
   end
 
   describe 'GET #index' do
@@ -35,8 +35,8 @@ RSpec.describe CategoriesController, type: :controller do
   end
 
   describe 'POST #create' do
-      it 're-renders the new template on failure' do
-      category_params = { name: '' } 
+    it 're-renders the new template on failure' do
+      category_params = { name: '' }
       post :create, params: { category: category_params }
       expect(response).to render_template('new')
     end
