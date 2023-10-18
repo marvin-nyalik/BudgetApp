@@ -1,0 +1,185 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.splash {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.splash .btn {
+  width: 90%;
+  margin: 10px auto;
+  height: 7vh;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0;
+  position: relative;
+  top: -58px;
+}
+
+.rem-margin {
+  margin: 0 auto;
+  width: 99%;
+  padding: 0 8px;
+  height: 15vh;
+  position: relative;
+  left: 0;
+}
+
+.bx {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.notice,
+.alert {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 5;
+  border-radius: 0;
+  background-color: #007bff;
+}
+
+.withses {
+  position: relative;
+  top: 10px;
+}
+
+.withses p,
+a {
+  position: relative;
+  top: 20px;
+}
+
+.bottomise-container {
+  position: relative;
+  height: auto;
+  margin-bottom: 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.bottomise {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 7vh;
+  width: 100vw;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.bottomisep {
+  position: relative;
+  top: 80vh;
+  width: 80vw;
+}
+
+.withinc p,
+a {
+  font-size: 18px;
+  position: relative;
+  top: 6px;
+  font-weight: 400;
+}
+
+.withinp p,
+a {
+  font-size: 18px;
+  position: relative;
+  top: 10px;
+  font-weight: 400;
+}
+
+.bottomise a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.withinp {
+  width: 100%;
+  height: 10vh;
+  margin: 0 auto;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  position: relative;
+  top: -20px;
+  z-index: 9;
+}
+
+.withinc {
+  position: relative;
+  top: -48px;
+  width: 100vw !important;
+}
+
+.withinp a {
+  position: relative;
+  top: -2px;
+}
+
+.within {
+  width: 100%;
+  height: 10vh;
+  margin: 0 auto;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+.within p {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.within a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  top: -5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cat-cont {
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.showcase {
+  position: relative;
+  top: -27px;
+  z-index: 5;
+}
